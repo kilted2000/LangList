@@ -4,6 +4,10 @@ const port = 3000;
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
+  document.getElementById('lang').addEventListener("click", langItem)
+  function langItem(){
+     document.getElementById('list').innerHTML = `<li>${langList}</li>`
+  }
 });
 
 app.post('/', (req, res) => {
