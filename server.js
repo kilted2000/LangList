@@ -19,7 +19,7 @@ app.post('/', (req, res) => {
 });
 
 app.delete('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Goodbye World!');
 });
 
 //user inputs lang name into input box
