@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-let langList = [];
+let langList = ['javascript', 'typescript', 'java', 'golang', 'python'];
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send()
   document.getElementById('lang').addEventListener("click", langItem)
   function langItem(){
     for(let i = 0;i <= langList.length;i++){
@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
+
   res.send('Hello World!');
 });
 
