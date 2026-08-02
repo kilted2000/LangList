@@ -5,7 +5,7 @@ const port = 3000;
 let langList = ['javascript', 'typescript', 'java', 'golang', 'python'];
 
 app.get('/', (req, res) => {
-  res.send()
+  res.send("hello world again")
   document.getElementById('lang').addEventListener("click", langItem)
   function langItem(){
     for(let i = 0;i <= langList.length;i++){
