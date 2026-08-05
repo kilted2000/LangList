@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   function langItem(){
     for(let i = 0;i <= langList.length;i++){
      document.getElementById('list').innerHTML = `<li>${langList[i]}</li>`
-     console.log("hello rag!")
+     console.log("hello raggity ann!")
   }}
 });
 
