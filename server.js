@@ -16,7 +16,12 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-
+  document.getElementById('lang').addEventListener("click", langItemAdd)
+  function langItemAdd(){
+    for(let i = 0;i <= langList.length;i++){
+     document.getElementById('list').langList.push()
+     console.log("hello raggity ann!")
+  }}
   res.send('Hello World!');
 });
 
