@@ -19,10 +19,10 @@ app.post('/', (req, res) => {
   document.getElementById('lang').addEventListener("click", langItemAdd)
   function langItemAdd(){
     for(let i = 0;i <= langList.length;i++){
-     document.getElementById('list').langList.push()
+     document.getElementById('list').langList[i].push()
      console.log("hello raggity ann!")
   }}
-  res.send('Hello World!');
+  //res.send('Hello World!');
 });
 //maybe do over wkend
 
