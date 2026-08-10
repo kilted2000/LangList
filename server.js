@@ -4,27 +4,33 @@ const port = 3000;
 
 let langList = ['javascript', 'typescript', 'java', 'golang', 'python'];
 
+document.getElementById('lang').addEventListener("click", langItem)
+function langItem() {
+  for (let i = 0; i <= langList.length; i++) {
+    document.getElementById('list').innerHTML = `<li>${langList[i]}</li>`
+    console.log("hello raggity ann!")
+  }
+}
+
+document.getElementById('lang').addEventListener("click", langItemAdd)
+function langItemAdd() {
+  for (let i = 0; i <= langList.length; i++) {
+    document.getElementById('list').langList[i].push()
+    console.log("hello raggity ann!")
+  }
+}
+
+
 app.get('/', (req, res) => {
-  //google how to send in a CRUD app to see if I am on the right track
   res.send("hello world again")
-  document.getElementById('lang').addEventListener("click", langItem)
-  function langItem(){
-    for(let i = 0;i <= langList.length;i++){
-     document.getElementById('list').innerHTML = `<li>${langList[i]}</li>`
-     console.log("hello raggity ann!")
-  }}
+
 });
 
 app.post('/', (req, res) => {
-  document.getElementById('lang').addEventListener("click", langItemAdd)
-  function langItemAdd(){
-    for(let i = 0;i <= langList.length;i++){
-     document.getElementById('list').langList[i].push()
-     console.log("hello raggity ann!")
-  }}
-  //res.send('Hello World!');
+
+  res.send('Hello World!');
 });
-//maybe do over wkend
+
 
 app.delete('/', (req, res) => {
   res.send('Goodbye World!');
@@ -33,8 +39,8 @@ app.delete('/', (req, res) => {
 //user inputs lang name into input box
 //user clicks btn to submit
 //lang is displayed in OL
-  //langs held in array
-  //for loop maps items in array
+//langs held in array
+//for loop maps items in array
 //OL LI has edit and delete btns
 //user can delete or edit entries
 
