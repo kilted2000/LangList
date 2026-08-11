@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-let langList = ['javascript', 'typescript', 'java', 'golang', 'python'];
+let langList = ['javascript', 'typescript', 'java', 'golang', 'python', 'rust'];
 
 document.getElementById('lang').addEventListener("click", langItem)
 function langItem() {
