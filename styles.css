@@ -8,6 +8,10 @@ h1{
 
 ol{
     color: slategrey;
+    background-color: darkblue;
+}
+li{
+    color: grey;
 }
 
 
