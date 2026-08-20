@@ -22,7 +22,7 @@ function langItemAdd() {
 
 
 app.get('/', (req, res) => {
-  res.send("hello world again")
+  res.send("hello world again,hello")
 
 });
 
